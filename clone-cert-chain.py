@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 from random import randint
+from sys import argv
 from cryptography import x509
 from cryptography.hazmat.backends import default_backend
 from cryptography.hazmat.primitives import hashes
@@ -106,4 +107,4 @@ def clone_chain(pem_file, cloned_pem_file):
 
 
 if __name__ == "__main__":
-    clone_chain('original.pem', 'cloned.pem')
+    clone_chain(sys.argv[1], sys.argv[2])

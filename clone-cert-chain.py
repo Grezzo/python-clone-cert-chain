@@ -107,4 +107,4 @@ def clone_chain(pem_file, cloned_pem_file):
 
 
 if __name__ == "__main__":
-    clone_chain(sys.argv[1], sys.argv[2])
+    clone_chain(argv[1], argv[2])
